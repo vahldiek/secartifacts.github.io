@@ -164,6 +164,7 @@ artifacts:
       <th>Funct.</th>
       <th>Repro.</th>
       <th>Available At</th>
+      <th>Appendix</th>
       <!--<th>Review Summary</th>-->
     </tr>
   </thead>
@@ -202,8 +203,8 @@ artifacts:
         {% endif %}
       </td>
       <td>
-        {% if artifact.summary %}
-          <a href="summaries/{{ artifact.summary }}.html">Summary</a>
+        {% if artifact.appendix_url %}
+          <a href="{{artifact.appendix_url}}" target="_blank">Appendix</a><br>
         {% endif %}
       </td>
     </tr>
